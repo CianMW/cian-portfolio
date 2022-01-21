@@ -36,3 +36,99 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.full-cover{
+  background-color: #0C0F0A;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.header-background{
+  background-color: #0C0F0A;
+}
+
+
+.gold-trim{
+  border: 2px solid #D4AF37;
+}
+
+
+/* test starts here */
+:root {
+  --gold: #ffb338;
+  --light-shadow: #77571d;
+  --dark-shadow: #3e2904;
+}
+
+.border-wrap {
+  
+  max-width: 250px;
+  padding: 1rem;
+  border-width: 10px;
+  border-style: solid;
+  background: repeating-linear-gradient( 60deg, 
+  var(--gold) 0% , 
+  var(--dark-shadow) 23%,
+  var(--gold) 60%) ;
+  padding-left : 3px;
+  padding-right : 3px;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  /* border-radius: 20%; */
+}
+
+/*   background-image: repeating-linear-gradient( 5deg,  
+    var(--gold) 0% , 
+    var(--light-shadow) 23%, 
+    var(--gold) 31%); */
+.main {
+  background: #222;
+  color: white;
+  padding: 0, 4rem;
+  height: 100vh
+}
+
+.background-gold{
+ 
+  background: linear-gradient(#000000, #d4af37);
+                                                        
+}
+
+
+
+
+/* test ends */
+
+.sidenav {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #565656;
+  transition: 0.5s ease;
+  overflow-x: hidden;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideNavButton{
+  font-size: 50px;
+  color: white
+}
+
+.inner-divs{
+  
+  background-color: black;
+  width:95%;
+  height: 95%;
+}
+
+.parent-width{
+  min-width: 100%;
+}
