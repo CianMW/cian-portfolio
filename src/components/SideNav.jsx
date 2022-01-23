@@ -1,15 +1,26 @@
+import { Link } from "react-router-dom";
+
 const SideNav = ({wid, closeSideNav}) => {
     return (
-    <div className="sidenav metal radial d-flex justify-content-center align-items-center" style={{width: wid}} >
-        <div className="inner-div rounded">
-
+    <div className="sidenav d-flex align-items-center" style={{width: wid}} >
         <div  className="sideNavButton " onClick={closeSideNav} >
 
         <i className="bi bi-list" ></i>
         </div>
         {/* <button onClick={closeSideNav}>X</button> */}
-       <a href="#section">Home</a>
-        </div>
+        <Link to="/">
+        <span>Home</span>
+        </Link>
+        <Link to="/">
+        <span>Portfolio</span>
+        </Link>
+        <Link to="/">
+        <span>Contact Me</span>
+        </Link>
+        <Link to="/">
+        <span>About</span>
+        </Link>
+
     </div>
      )
     };
