@@ -7,7 +7,7 @@ const Projects = () => {
 
     return(
         <>
-             <Row className="mb-5">
+             <Row className="my-5">
                 <Col className="m-0 col-12">
                   <Row className="mb-3">
                     <Col className="col-4 justify-content-center">
@@ -26,7 +26,7 @@ const Projects = () => {
                       <div className="outer-image">
                         <picture className="picture-container d-flex justify-content-center">
                           <div className="shadow-div"> 
-                          <img className="inner-image"  height="500px" alt="pic" src="/projects/Weather-at-logo.png"/>
+                          <img className="rounded inner-image"  height="500px" alt="pic" src="/projects/Weather-at-logo.png"/>
                           </div>
                         </picture>
                       </div>
@@ -45,18 +45,19 @@ const Projects = () => {
                     {/* Second Project */}
 
                     <Col className="col-12 col-lg-6">
-                      <a target="_blank" href="http://weather-at.herokuapp.com/">
+                      <a target="_blank" href="https://linkedin-clone-aug.herokuapp.com/">
                       <div className="outer-image">
                         <picture className="picture-container">
                           <div className="shadow-div"> 
-                          <img className="inner-image"  alt="pic" src="/projects/linkedin-screen-cap.png"/>
+                          <img className="rounded inner-image"  alt="pic" src="/projects/linkedin-clone-logo.png"/>
                           </div>
                         </picture>
                       </div>
                       </a>
                       <Row className="mt-3">
                       <h2 className="text-center">LinkedIn Clone</h2>
-                        <p>A full clone of LinkedIn created as part of a team, the clone is comprised of a front end built with javascript, react and bootstrap and a back end server built with Node.js, Express.js and MongoDB.
+                        <p>
+                            A full clone of LinkedIn created as part of a team, the clone is comprised of a front end built with javascript, react and bootstrap and a back end server built with Node.js, Express.js and MongoDB.
                           Includes a main menu.
                         </p>
                         <Col className="justify-content-center col-12 col-md-6">
@@ -84,8 +85,14 @@ const Projects = () => {
                       </a>
                       <Row className="mt-3">
                       <span className="text-center text-nowrap"> <h2 className="d-inline-block">Odyssey</h2> Virtual Tabletop</span>
-                        <p>A virtual tabletop with a focus on Old-school Revival games and indie developer support. A digital table where players camn come together 
+                        <p>A virtual tabletop with a focus on Old-school Revival games and indie developer support. A digital table where players camn come together and play using their own rule sets, characters and creatures.
                         </p>
+                            <p>
+                                The front end is built with Javascript, React, bootstrap and socket IO.
+                            </p>
+                            <p>
+                                The back end is built using Express.js, Socket IO and MongoDB. 
+                            </p>
                         <Col className="justify-content-center col-12 col-md-6">
                           <h3 className="text-center"><span className="highlighted">Front End:  </span><a target="_blank" href="https://github.com/CianMW/odyssey-vtt-fe"><i className="unstyled bi bi-github"></i></a></h3>
                           </Col>

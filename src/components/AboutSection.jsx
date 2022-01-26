@@ -7,7 +7,7 @@ import { Row, Col } from "react-bootstrap"
 const AboutSection = () => {
 
 return (
-                <Row className="mb-5">
+                <Row className="mb-5 m-0 p-0">
                 <Col className="m-0 col-12">
                   <Row className="mb-3">
                     <Col className="col-4 justify-content-center">

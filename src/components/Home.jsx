@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import AboutSection from "./AboutSection";
+import ContactFooter from "./ContactFooter";
 import Projects from "./Projects";
 
 const Home = () => {
@@ -55,10 +56,10 @@ const Home = () => {
 
 
           </div>
+    <ContactFooter/>
         </Col>
         <Col className="col-1 p-0"></Col>
       </Row> 
-
     </Container>
   );
 };
