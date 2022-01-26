@@ -20,8 +20,10 @@ export default class CustomScrollbar extends Component {
         const { top } = this.state;
         const viewStyle = {
             // paddingTop:  0 ,
-            backgroundColor: `rgb(${Math.round(255 - (top * 255))}, ${Math.round(top * 255)}, ${Math.round(255)})`,
-            color: `rgb(${Math.round(255 - (top * 255))}, ${Math.round(255 - (top * 255))}, ${Math.round(255 - (top * 255))})`
+            // backgroundColor: `rgb(${Math.round(255 - (top * 255))}, ${Math.round(top * 255)}, ${Math.round(255)})`,
+            backgroundColor: `#0C0F0A`,
+            color: `white`,
+            overflowX: "hidden"
         };
         return (
             <div
