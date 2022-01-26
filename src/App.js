@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +8,7 @@ import { useState } from 'react';
 // import Scrollbars from 'react-custom-scrollbars';
 import CustomScrollbar from './components/CustomScrollbar.jsx';
 import TopNav from './components/TopNav';
+import './App.css';
 
 
 function App() {
