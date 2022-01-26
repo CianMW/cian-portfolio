@@ -2,25 +2,24 @@ import { Link } from "react-router-dom";
 
 const SideNav = ({wid, closeSideNav}) => {
     return (
-    <div className="sidenav d-flex align-items-center" style={{width: wid}} >
+    <div className="sidenav  d-flex align-it ems-center" style={{width: wid}} >
         <div  className="sideNavButton " onClick={closeSideNav} >
 
-        <i className="bi bi-list" ></i>
-        </div>
+        <i className="unstyled bi bi-list" ></i>
+        </div >
         {/* <button onClick={closeSideNav}>X</button> */}
-        <Link to="/">
-        <span>Home</span>
+        <Link className="unstyled text-end" to="/">
+        <h2 className="unstyled d-flex text-end">Home</h2>
         </Link>
-        <Link to="/">
-        <span>Portfolio</span>
+        <Link className="unstyled" to="/">
+        <h2 className="unstyled">Portfolio</h2>
         </Link>
-        <Link to="/">
-        <span>Contact Me</span>
+        <Link className="unstyled" to="/">
+        <h2 className="unstyled">About</h2>
         </Link>
-        <Link to="/">
-        <span>About</span>
+        <Link className="unstyled" to="/">
+        <h2 className="unstyled">Contact</h2>
         </Link>
-
     </div>
      )
     };

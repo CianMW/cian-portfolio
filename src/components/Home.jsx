@@ -1,16 +1,17 @@
 import { Col, Container, Row } from "react-bootstrap";
+import AboutSection from "./AboutSection";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
     <Container className="pt-0  d-flex full-cover justify-content-center">
-      <Row className="p-2 parent-width">
+      <Row className="p-2 m-0 parent-width">
         <Col className="col-1 p-0"></Col>
         <Col className="col-10 p-0 justify-content-center">
           <div className="outers">
             <div className="main">
-              {/* insert content here */}
               <Row className="p-0">
-                <Col className="col-8 p-0 text-center ">
+                <Col className="col-12 p-0 text-center ">
                   <p className="m-0 d-none d-md-block">
                     <span className="main-text solid-font">Hello, I'm </span>
                     <span className="text-center main-text main-title ">
@@ -20,7 +21,7 @@ const Home = () => {
                   <div className="m-0 d-flex justify-content-around align-items-center ">
                       <Row className="text-center">
                           <Col className="col-12 d-md-none text-md-nowrap">
-                        <span className="text-center main-text main-title ">
+                        <span className="text-center main-text main-title">
                         Cian Markwick   
                         </span>
                           </Col>
@@ -32,16 +33,32 @@ const Home = () => {
                       </Row>
                   </div>
                 </Col>
-                <Col className="col-4">
-                    <img src="/cian-self.jpg" className="sized"/>
-                </Col>
-              </Row>
-              {/* end of home page content */}
+              </Row> 
             </div>
+
+              {/* insert content here */}
+      <Row className="mt-4">
+              {/* Recent Works section */}
+           <Projects/>
+
+              {/*   About me section */}
+            <AboutSection/>
+
+              {/* third section */}
+              <Row></Row>
+
+              </Row>     
+
+
+              {/* end of home page content */}
+
+
+
           </div>
         </Col>
         <Col className="col-1 p-0"></Col>
-      </Row>
+      </Row> 
+
     </Container>
   );
 };
