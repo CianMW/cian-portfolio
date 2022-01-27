@@ -7,30 +7,34 @@ const Projects = () => {
 
     return(
         <>
-             <Row className="my-5">
+             <Row  className="my-5">
                 <Col className="m-0 col-12">
                   <Row className="mb-3">
                     <Col className="col-4 justify-content-center">
+                  <a id="project_section">
 
                   <h1 className="text-center text-nowrap">My Recent Works
 
                   <div className="main" style={{height:"3px"}}></div>
                   </h1>
+                  </a>
                     </Col> 
                   </Row>
                   <Row >
                     {/* First Project */}
 
                     <Col className="col-12 col-lg-6">
-                      <a target="_blank" href="http://weather-at.herokuapp.com/">
+                      {/* <a target="_blank" href="http://weather-at.herokuapp.com/"> */}
                       <div className="outer-image">
-                        <picture className="picture-container d-flex justify-content-center">
-                          <div className="shadow-div"> 
-                          <img className="rounded inner-image"  height="500px" alt="pic" src="/projects/Weather-at-logo.png"/>
+                        <div className="cover1">
+
+                          <img className="wrapper1 rounded inner-image"  height="500px" alt="pic" src="/projects/Weather-at-logo.png"/>
+{/* w                          <div className="shadow-div"> 
+                          </div> */}
+                        <img className="wrapper1 project-device-img"  src="/laptop-weather-at.png" />
                           </div>
-                        </picture>
                       </div>
-                      </a>
+                      {/* </a> */}
                       <Row className="mt-3">
                       <h2 className="text-center fw-bold">Weather @</h2>
                         <p>A weather application developed with a mobile first focus. The application allows for searching by location or by geolocation with the last location persisting for the next use. </p>
@@ -77,10 +81,9 @@ const Projects = () => {
                       <a target="_blank" href="http://weather-at.herokuapp.com/">
                       <div className="outer-image">
                         <picture className="picture-container">
-                          <div className="shadow-div"> 
                           <img className="rounded inner-image"  alt="pic" src="/projects/Odyssey-vtt-logo-new.png"/>
-                          </div>
                         </picture>
+                          <div className="shadow-div"></div>
                       </div>
                       </a>
                       <Row className="mt-3">

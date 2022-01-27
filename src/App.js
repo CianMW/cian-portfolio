@@ -13,16 +13,16 @@ import './App.css';
 
 function App() {
 
-  const [wid, setWid] = useState("0%");
+  const [wid, setWid] = useState("closed");
   const [display, setDisplay] = useState("block");
 
   const openSideNav = () => {
-    setWid("25%")
+    setWid("open")
     setDisplay("none")
  }
 
   const closeSideNav = () => {
-    setWid("0%")
+    setWid("closed")
     setDisplay("block")
 
     // setAnimation("")

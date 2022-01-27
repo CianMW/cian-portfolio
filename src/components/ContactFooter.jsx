@@ -2,13 +2,16 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const ContactFooter = () => {
   return (
-    <Row className="p-0 my-3 footer sticky-bottom">
+    <Row id="contact_section" className="p-0 my-3 footer sticky-bottom">
       <Row className="mb-3">
         <Col className="col-lg-6 col-8 col-md-8 justify-content-center">
+          <a id="contact_section">
+
           <h1 className="text-center text-nowrap">
             Want to get in touch?
             <div className="main-3" style={{ height: "3px" }}></div>
           </h1>
+          </a>
         </Col>
       </Row>
       <Row className="p-md-5 p-2 main-3">
