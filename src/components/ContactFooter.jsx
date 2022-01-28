@@ -29,13 +29,17 @@ const ContactFooter = () => {
      </a>
           </h1>
       </Col>
-      <Col className="col-8 col-md-6 align-items-center">
-          <div className="d-flex justify-content-around align-items-center">
+      <Col className="d-none d-md-2"></Col>
+      <Col className="col-8 col-md-4 align-items-center">
+          <div className="d-flex justify-content-between align-items-center">
 
-          <h1 className="text-center align-bottom d-flex d-inline-block">
-            email:
-          </h1>
-             <span className="mr-2 align-bottom email mb-0">   markwick.cian@gmail.com</span>
+          <h3 className="text-center align-bottom d-flex d-inline-block"><i class="bi bi-envelope-fill"></i></h3>
+             <span className="ml-3 align-bottom email mb-0"> markwick.cian@gmail.com</span>
+          </div>
+          <div className="d-flex justify-content-between align-items-center">
+
+          <h3 className="text-center align-bottom d-flex d-inline-block"> <i class="bi bi-geo-alt-fill"></i></h3>
+             <span className="ml-3 align-bottom email mb-0"> Glasgow, Scotland, UK</span>
           </div>
       </Col>
       </Row>

@@ -8,7 +8,7 @@ const SideNav = ({wid, closeSideNav}) => {
         <i className="unstyled bi bi-list" ></i>
         </div >
         {/* <button onClick={closeSideNav}>X</button> */}
-        <a href="" className="unstyled text-end" to="/">
+        <a href="#home-section" className="unstyled text-end" to="/">
         <h2 className="unstyled d-flex text-end">Home</h2>
         </a>
         <a href="#project_section" className="unstyled" to="/">
