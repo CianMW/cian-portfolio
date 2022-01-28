@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import AboutSection from "./AboutSection";
+import ContactFooter from "./ContactFooter";
 import Projects from "./Projects";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
           <div className="outers">
             <div className="main">
               <Row className="p-0">
+                <a id="home-section"></a>
                 <Col className="col-12 p-0 text-center ">
                   <p className="m-0 d-none d-md-block">
                     <span className="main-text solid-font">Hello, I'm </span>
@@ -37,12 +39,14 @@ const Home = () => {
             </div>
 
               {/* insert content here */}
-      <Row className="mt-4">
-              {/* Recent Works section */}
-           <Projects/>
+             <Row className="mt-5">
 
               {/*   About me section */}
             <AboutSection/>
+
+              {/* Recent Works section */}
+             <Projects/>
+
 
               {/* third section */}
               <Row></Row>
@@ -55,10 +59,10 @@ const Home = () => {
 
 
           </div>
+    <ContactFooter/>
         </Col>
         <Col className="col-1 p-0"></Col>
       </Row> 
-
     </Container>
   );
 };
