@@ -27,7 +27,7 @@ const Projects = () => {
                         <img
                           className="BIIJPG weather-at"
                           alt="pic"
-                          src="/projects/Weather-at-background.png"
+                          src="/projects/weather-at-background.png"
                           />
                         <div className="SOTD"></div>
                       </picture>
