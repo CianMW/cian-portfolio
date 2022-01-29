@@ -15,7 +15,7 @@ const Projects = () => {
               </a>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-5">
             {/* First Project */}
 
             <Col className="col-12 col-md-6">
@@ -100,7 +100,7 @@ const Projects = () => {
                   A full clone of LinkedIn created as part of a team, the clone
                   is comprised of a front end built with javascript, react and
                   bootstrap and a back end server built with Node.js, Express.js
-                  and MongoDB. Includes a main menu.
+                  and MongoDB. Includes OAuth verification and real-time posting.
                 </p>
                 <Col className="justify-content-center col-12 col-md-6">
                   <h3 className="text-center">
@@ -164,7 +164,7 @@ const Projects = () => {
                 <p>
                   A virtual tabletop with a focus on Old-school Revival games
                   and indie developer support. A digital table where players
-                  camn come together and play using their own rule sets,
+                  can come together and play using their own rule sets,
                   characters and creatures.
                 </p>
                 <p>
