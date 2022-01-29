@@ -12,13 +12,13 @@ const Home = () => {
           <div className="outers">
             <div className="main">
               <Row className="p-0">
-                <a id="home-section"></a>
+                <a id="home-sectionf"></a>
                 <Col className="col-12 p-0 text-center ">
                   <p className="m-0 d-none d-md-block">
                     <span className="main-text solid-font">Hello, I'm </span>
                     <span className="text-center main-text main-title ">
                         Cian Markwick   
-                        </span>
+                    </span>
                   </p>
                   <div className="m-0 d-flex justify-content-around align-items-center ">
                       <Row className="text-center">
