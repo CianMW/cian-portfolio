@@ -5,7 +5,7 @@ import Projects from "./Projects";
 
 const Home = () => {
   return (
-    <Container className="pt-0  d-flex full-cover justify-content-center">
+    <Container className="pt-0 d-flex full-cover justify-content-center">
       <Row className="p-2 m-0 parent-width">
         <Col className="col-1 p-0"></Col>
         <Col className="col-10 p-0 justify-content-center">
