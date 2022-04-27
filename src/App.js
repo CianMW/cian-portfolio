@@ -10,6 +10,7 @@ import TopNav from './components/mainPortfolio/TopNav';
 import './App.css';
 import Landing from './components/Landing';
 import CorporateHome from './components/corporate/CorporateHome';
+import BakerySample from './components/bakerySample/BakerySample';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/" element={<Landing/>}/>
         <Route path="/corporate" element={<CorporateHome/>}/>
         <Route path="/main" element={<Home/>}/>
+        <Route path="/sampleBakery" element={<BakerySample/>}/>
       </Routes>
       </BrowserRouter>
     </CustomScrollbar>
