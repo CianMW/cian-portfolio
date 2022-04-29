@@ -31,7 +31,7 @@ return (
         </Col>
         <Col className="col-12 col-sm-6 p-2 justify-content-center">
             <div>
-            <img className="rounded cian-self c-glow" src="/cian-neon.png" />
+            <img className="rounded cian-self c-glow" src="https://i.ibb.co/hcVmTqQ/Optimized-cian-neon.jpg" />
             </div>
         </Col>
         <Col className="col-12 d-sm-none">

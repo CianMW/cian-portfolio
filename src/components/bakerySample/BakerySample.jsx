@@ -16,11 +16,11 @@ const BakerySample = () => {
                     <img className="bakeryLogoImage" src="https://i.ibb.co/crStXGQ/bakery-Logo.png"/>
                     </Row>
                     <div className=" text-center align-middle">
-                        <a className="bakeryLink" ><span>Home</span></a>
-                        <a className="bakeryLink" ><span>Menu</span></a>
-                        <a className="bakeryLink" ><span>Gallery</span></a>
-                        <a className="bakeryLink" ><span>About Us</span></a>
-                        <a className="bakeryLink" ><span>Contact</span></a>
+                        <a className="bakeryLink"><span>Home</span></a>
+                        <a className="bakeryLink"><span>Menu</span></a>
+                        <a className="bakeryLink"><span>Gallery</span></a>
+                        <a className="bakeryLink"><span>About Us</span></a>
+                        <a className="bakeryLink"><span>Contact</span></a>
                     </div>
                     <div className="pt-3 text-center">
                     <p>1 Dunira Close, Newcastle Upon Tyne,NE2 2EL</p>

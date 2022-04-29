@@ -40,7 +40,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing/>}/>
         <Route path="/corporate" element={<CorporateHome/>}/>
-        <Route path="/main" element={<Home/>}/>
+        <Route path="/portfolio" element={<Home/>}/>
         <Route path="/sampleBakery" element={<BakerySample/>}/>
       </Routes>
       </BrowserRouter>

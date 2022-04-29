@@ -15,7 +15,7 @@ const CommerceNav = () => {
             <div className="px-2 nav-link-container">
                 <h4 className="blue-top">Features</h4>
               </div>
-            <div className="px-2 nav-link-container">
+            <div className="px-2 nav-link-container align-middle">
                 <h4 className="blue-top">Contact</h4>
               </div>
           </Nav>

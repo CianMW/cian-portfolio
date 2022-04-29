@@ -1,4 +1,7 @@
-import { Col, Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container  from "react-bootstrap/Container";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -13,7 +16,7 @@ const CommerceFooter = () => {
 
   return (
 
-      <Container>
+      <Container className="m-0 p-0 justify-content-center">
         <Row className="pt-5 justify-content-center">
             <Col md={12} className=" pb-5 text-center align-items-center">
           <h2>Contact</h2>
@@ -22,30 +25,28 @@ const CommerceFooter = () => {
           </p>
             </Col>
         </Row>
-        <Row>
-        <div className="row"  >
-          <div className="col-lg-6">
-            <div className="info-box mb-4 bg-light">
+        <Row className="mb-4 ">
+          <div className=" col-lg-6">
+            <div className=" shadow bg-light info-box mb-4 ">
               <i className="bx bx-map" />
               <h3>Our Address</h3>
               <p>8 Minto Street, Glasgow, G52 1DN</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
-            <div className="info-box  mb-4">
+          <div className="col-lg-3  col-md-6">
+            <div className="info-box shadow bg-light mb-4">
               <i className="bx bx-envelope" />
               <h3>Email Us</h3>
               <p>markwick.cian@gmail.com</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
-            <div className="info-box  mb-4">
+          <div className="col-lg-3  col-md-6">
+            <div className="info-box shadow bg-light mb-4">
               <i className="bx bx-phone-call" />
               <h3>Call Us</h3>
               <p>+44 7565 403 554</p>
             </div>
           </div>
-        </div>
         </Row>
         <div className="row" data-aos="fade-up" data-aos-delay={100}>
           <div className="col-lg-6 ">
@@ -57,15 +58,15 @@ const CommerceFooter = () => {
 
             />
           </div>
-          <div className="col-lg-6">
+          <Col lg={6} className="align-items-between" >
             <form
               action="forms/contact.php"
               method="post"
               role="form"
               className="php-email-form"
             >
-              <div className="row">
-                <div className="col form-group">
+              <Row className="align-items-between">
+                <Col className=" pb-2 form-group">
                   <input
                     type="text"
                     name="name"
@@ -74,8 +75,8 @@ const CommerceFooter = () => {
                     placeholder="Your Name"
                     required=""
                   />
-                </div>
-                <div className="col form-group">
+                </Col>
+                <Col className="col form-group">
                   <input
                     type="email"
                     className="form-control"
@@ -84,9 +85,9 @@ const CommerceFooter = () => {
                     placeholder="Your Email"
                     required=""
                   />
-                </div>
-              </div>
-              <div className="form-group">
+                </Col>
+              </Row>
+              <Col className="form-group">
                 <input
                   type="text"
                   className="form-control"
@@ -95,7 +96,7 @@ const CommerceFooter = () => {
                   placeholder="Subject"
                   required=""
                 />
-              </div>
+              </Col>
               <div className="form-group">
                 <textarea
                   className="form-control"
@@ -105,28 +106,18 @@ const CommerceFooter = () => {
                   required=""
                   defaultValue={""}
                 />
-              </div>
-              <div className="my-3">
-                <div className="loading">Loading</div>
-                <div className="error-message" />
-                <div className="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
+               </div>
+
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <Button variant="light" type="submit">Send Message</Button>
               </div>
             </form>
-          </div>
+          </Col>
         </div>
-        <Row className="mt-5">
-        <Row className="mt-5">
-        <Row className="mt-5">
-        <Row data-aos={"fade-left"} className="mt-5">
-                <div ><p>!!! well here it is !!!</p></div>
-        </Row>
-        </Row>
-        </Row>
+        <Row  className="text-center align-items-center shadow-sm bg-light align-items-center mt-3 m-0 p-0 commerceFooter">
+            <span >
+              Webite built by Cian Markwick
+            </span>
         </Row>
       </Container>
   );
