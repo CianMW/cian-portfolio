@@ -142,18 +142,18 @@ const Projects = () => {
                         <img
                           className="BIIJPG odyssey-vtt"
                           alt="pic"
-                          src="/projects/odyssey-background.png"
+                          src="https://i.ibb.co/s3rGV80/500-500-px.png"
                         />
                         <div className="SOTD"></div>
                       </picture>
-                      <img className="BIFTF" src="/projects/odyssey-coming-soon.png" />
+                      <img className="BIFTF" src="https://i.ibb.co/WktP2gK/space-aces-tablet.png" />
                       <span className="image-text-odyssey-left text-nowrap">Odyssey</span>
                       <img className="sword" src="/projects/odyssey-sword.png" height="50px" />
                       <span className="image-text-odyssey-right text-nowrap">VTT</span>
 
                       <a
                         className="site-link"
-                        href="/-"
+                        href="https://odyssey-space-aces-fe.vercel.app/"
                         target="_blank"
                       ></a>
                     </div>
@@ -162,13 +162,11 @@ const Projects = () => {
               </Row>
               <Row className="mt-3">
                 <p>
-                  A virtual tabletop with a focus on Old-school Revival games
-                  and indie developer support. A digital table where players
-                  can come together and play using their own rule sets,
-                  characters and creatures.
+                  A digital implementation of the role playing game Space Aces. Odyssey vtt is a digital tabletop where players
+                  can come together and play using the rule set, generators, characters and creatures.
                 </p>
                 <p>
-                  The front end is built with Javascript, React, bootstrap and
+                  The front end is built with Javascript, React, bootstrap, 3JS and
                   socket IO.
                 </p>
                 <p>
