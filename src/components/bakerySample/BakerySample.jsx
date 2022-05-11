@@ -2,9 +2,44 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./bakeryStyle.css";
+import MenuItem from "./MenuItem";
 
 
 const BakerySample = () => {
+
+
+    const menuItems = [
+        {
+            title: "Pound Cake",
+            description: "A soft, vanilla pound cake with a rich, buttery taste.",
+            image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
+            price: "£ 2",
+            imgAlt: "Pound Cake"
+
+        },
+        {
+            title: "Rustic Apple Tart",
+            description: "French apple tart consisting of a thin layer of cinnamon-scented apples atop a buttery, flaky crust.",
+            image: "https://www.onceuponachef.com/images/2017/10/rustic_french_apple_tart.jpg",
+            price: "£ 2.50",
+            imgAlt: "Rustic French Apple Tart"
+        },
+        {
+            title: "Salted Caramel cookies",
+            description: "Soft chewy caramel cookies with sea salt and drizzled with salted caramel.",
+            image: "https://i0.wp.com/brownedbutterblondie.com/wp-content/uploads/2021/02/Salted-Caramel-Choco-Chip-Cookies-For-Two-BP-1-1.jpg",
+            price: "£ 3.15",
+            imgAlt: "salted caramel cookies",
+
+        },
+        {
+            title: "Baklava",
+            description: "A combination of sticky, crisp pastry and nuts.",
+            image: "https://www.carolinescooking.com/wp-content/uploads/2020/10/Greek-recipes-square.jpg",
+            imgAlt: "Baklava",
+            price: "£ 2"
+        },
+    ]
 
 
     return (
@@ -47,7 +82,11 @@ const BakerySample = () => {
                                         </div>
                                     </div>
                                     <div className="rightMenuPanel">
-
+                                        { menuItems.length > 0 && menuItems.map((item, index) => 
+                                            <MenuItem key={index+Math.random()} items={item} />
+                                        )
+                                            
+                                        }
                                     </div>
                                 </div>
                             </Row>
