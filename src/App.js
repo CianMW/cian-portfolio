@@ -1,14 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import SideNav from './components/SideNav';
+import Home from './components/mainPortfolio/Home';
+import SideNav from './components/mainPortfolio/SideNav';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
-// import Scrollbars from 'react-custom-scrollbars';
-import CustomScrollbar from './components/CustomScrollbar.jsx';
-import TopNav from './components/TopNav';
+import CustomScrollbar from './components/mainPortfolio/CustomScrollbar';
+import TopNav from './components/mainPortfolio/TopNav';
 import './App.css';
+import Landing from './components/Landing';
+import CorporateHome from './components/corporate/CorporateHome';
+import BakerySample from './components/bakerySample/BakerySample';
 
 
 function App() {
@@ -34,17 +36,12 @@ function App() {
       <CustomScrollbar style={{height: "100vh", width: "100vw", }}>
       <BrowserRouter>
       <TopNav openSideNav={openSideNav} display={display}/>
-      {/* <Row className="m-0 p-0 sticky-top header-background text-nowrap justify-content-left align-items-center">
-      <Col sm={2} className=" col-2 sideNavButton text-left" onClick={e => openSideNav()}>      
-    <i className="bi bi-list" ></i>
-      </Col>
-      <Col sm={8} className="justify-content-center align-items-center align-center text-center p-0 m-0 col-8">
-      </Col>
-      <Col className="col-2"></Col>
-    </Row> */}
     <SideNav closeSideNav={closeSideNav} wid={wid}/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Landing/>}/>
+        <Route path="/corporate" element={<CorporateHome/>}/>
+        <Route path="/portfolio" element={<Home/>}/>
+        <Route path="/sampleBakery" element={<BakerySample/>}/>
       </Routes>
       </BrowserRouter>
     </CustomScrollbar>
