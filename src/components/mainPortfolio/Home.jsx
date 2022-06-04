@@ -1,11 +1,24 @@
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import CradleLoader from "../Loader";
 import AboutSection from "./AboutSection";
 import ContactFooter from "./ContactFooter";
 import Projects from "./Projects";
 
 const Home = () => {
+  const [load, setLoad] = useState("true");
+  useEffect(() => {
+    setTimeout(() => {
+       setLoad("false");
+       setTimeout(() => {
+         setLoad("false none");
+       }, 1000);
+    }, 1500);
+  }, [])
+
   return (
     <Container className="pt-0 d-flex full-cover justify-content-center">
+        <CradleLoader display={load}/>
       <Row className="p-2 m-0 parent-width">
         <Col className="col-1 p-0"></Col>
         <Col className="col-10 p-0 justify-content-center">
