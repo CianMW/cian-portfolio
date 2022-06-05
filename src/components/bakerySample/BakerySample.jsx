@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./bakeryStyle.css";
 import MenuItem from "./MenuItem";
+import BakeryFooter from "./BakeryFooter";
 
 
 const BakerySample = () => {
@@ -14,7 +15,8 @@ const BakerySample = () => {
             description: "A soft, vanilla pound cake with a rich, buttery taste.",
             image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
             price: "£ 2",
-            imgAlt: "Pound Cake"
+            imgAlt: "Pound Cake",
+            allergens: "dairy, eggs, wheat"
 
         },
         {
@@ -22,7 +24,9 @@ const BakerySample = () => {
             description: "French apple tart consisting of a thin layer of cinnamon-scented apples atop a buttery, flaky crust.",
             image: "https://www.onceuponachef.com/images/2017/10/rustic_french_apple_tart.jpg",
             price: "£ 2.50",
-            imgAlt: "Rustic French Apple Tart"
+            imgAlt: "Rustic French Apple Tart",
+            allergens: "dairy, nuts, soy, eggs, wheat"
+
         },
         {
             title: "Salted Caramel cookies",
@@ -30,6 +34,8 @@ const BakerySample = () => {
             image: "https://i0.wp.com/brownedbutterblondie.com/wp-content/uploads/2021/02/Salted-Caramel-Choco-Chip-Cookies-For-Two-BP-1-1.jpg",
             price: "£ 3.15",
             imgAlt: "salted caramel cookies",
+            allergens: "dairy, nuts, soy, eggs, wheat, lactose"
+
 
         },
         {
@@ -37,7 +43,8 @@ const BakerySample = () => {
             description: "A combination of sticky, crisp pastry and nuts.",
             image: "https://www.carolinescooking.com/wp-content/uploads/2020/10/Greek-recipes-square.jpg",
             imgAlt: "Baklava",
-            price: "£ 2"
+            price: "£ 2",
+            allergens: "dairy, nuts, eggs, wheat, lactose"
         },
     ]
 
@@ -67,8 +74,7 @@ const BakerySample = () => {
                     <Row className="mainBakeryInfoContainer m-0 p-0">
                         <Col className="m-0 p-0" style={{overflowY: "scroll", overflowY: "hidden"}}>
                             {/* First Section START*/}
-                            <Row className="m-0 p-0">
-                            <img style={{width: "100%", padding: "0px"}} src="https://i.ibb.co/MVRQWbB/Bakery-Cafe-cover.jpg" />
+                            <Row className="m-0 p-0 bakeryBackgroundImage">
                             </Row>
                             {/* First Section END */}
 
@@ -81,19 +87,21 @@ const BakerySample = () => {
                                             <h2>Our Menu</h2>
                                         </div>
                                     </div>
-                                    <div className="rightMenuPanel">
+                                    <Row className="mt-5 rightMenuPanel">
                                         { menuItems.length > 0 && menuItems.map((item, index) => 
-                                            <MenuItem key={index+Math.random()} items={item} />
+                                        <Col md={4} className="col-12">
+                                            <MenuItem className="" key={index+Math.random()} items={item} />
+                                        </Col>
                                         )
                                             
                                         }
-                                    </div>
+                                    </Row>
                                 </div>
                             </Row>
                             {/* Menu Section Section END*/}
 
                             <Row className="m-0 p-0">
-                            <img style={{width: "100%", padding: "0px"}} src="https://i.ibb.co/MVRQWbB/Bakery-Cafe-cover.jpg" />
+                            <BakeryFooter/>
                             </Row>
                         </Col>
                     </Row>

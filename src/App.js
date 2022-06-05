@@ -15,28 +15,13 @@ import BakerySample from './components/bakerySample/BakerySample';
 
 function App() {
 
-  const [wid, setWid] = useState("closed");
-  const [display, setDisplay] = useState("block");
 
-  const openSideNav = () => {
-    setWid("open")
-    setDisplay("none")
- }
-
-  const closeSideNav = () => {
-    setWid("closed")
-    setDisplay("block")
-
-    // setAnimation("")
- }
 
 
   return (
     <Container fluid className="p-0 m-0 " style={{overflowX:"hidden"}}>
       <CustomScrollbar style={{height: "100vh", width: "100vw", }}>
       <BrowserRouter>
-      <TopNav openSideNav={openSideNav} display={display}/>
-    <SideNav closeSideNav={closeSideNav} wid={wid}/>
       <Routes>
         <Route path="/" element={<Landing/>}/>
         <Route path="/corporate" element={<CorporateHome/>}/>

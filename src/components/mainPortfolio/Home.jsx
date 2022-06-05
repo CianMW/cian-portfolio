@@ -4,9 +4,13 @@ import CradleLoader from "../Loader";
 import AboutSection from "./AboutSection";
 import ContactFooter from "./ContactFooter";
 import Projects from "./Projects";
+import SideNav from "./SideNav";
+import TopNav from "./TopNav";
 
 const Home = () => {
   const [load, setLoad] = useState("true");
+  const [wid, setWid] = useState("closed");
+  const [display, setDisplay] = useState("block");
   useEffect(() => {
     setTimeout(() => {
        setLoad("false");
@@ -16,9 +20,24 @@ const Home = () => {
     }, 1500);
   }, [])
 
+
+
+  const openSideNav = () => {
+    setWid("open")
+    setDisplay("none")
+ }
+
+  const closeSideNav = () => {
+    setWid("closed")
+    setDisplay("block")
+
+    // setAnimation("")
+ }
   return (
     <Container className="pt-0 d-flex full-cover justify-content-center">
         <CradleLoader display={load}/>
+        <TopNav openSideNav={openSideNav} display={display}/>
+        <SideNav closeSideNav={closeSideNav} wid={wid}/>
       <Row className="p-2 m-0 parent-width">
         <Col className="col-1 p-0"></Col>
         <Col className="col-10 p-0 justify-content-center">
