@@ -1,7 +1,9 @@
+import { Container, Row } from "react-bootstrap";
+
 const BakeryFooter = () => {
   return (
-    <>
-      <h1>Elegant Contact Form</h1>
+    <div className="bakeryFooterContainer">
+      <p className="bakerySectionTitle">Contact us for any enquiries</p>
       <form class="cf">
         <div class="half left cf">
           <input type="text" id="input-name" placeholder="Name"></input>
@@ -9,7 +11,7 @@ const BakeryFooter = () => {
             type="email"
             id="input-email"
             placeholder="Email address"
-          ></input>
+            ></input>
           <input type="text" id="input-subject" placeholder="Subject"></input>
         </div>
         <div class="half right cf">
@@ -18,11 +20,11 @@ const BakeryFooter = () => {
             type="text"
             id="input-message"
             placeholder="Message"
-          ></textarea>
+            ></textarea>
         </div>
-        <input type="submit" value="Submit" id="input-submit"></input>
+        <button onClick={e => e.preventDefault()} id="bakeryFormSubmit">Submit</button>
       </form>
-    </>
+      </div>
   );
 };
 

@@ -47,13 +47,38 @@
 .bakeryBackgroundImage {
   width: 100%;
   height: 450px;
-  background-image: url("https://i.ibb.co/MVRQWbB/Bakery-Cafe-cover.jpg");
+  background-image: url("https://www.nazstudentblog.com/wp-content/uploads/2015/03/village-bakery-home-retail.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
+
+/* General Styling Start */
+.bakerySectionTitle{
+  font-size: 2rem;
+  color: #c49684;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0 #c49684;
+
+}
+.bakerySection{
+  backround-color: white;
+}
+.bakeryAboutSection{
+  background-color:white;
+  text:center;
+}
+.bakeryAboutSection p{
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+  width: 80%;
+}
+/* General Styling end */
 /* Bakery Card Start*/
 .menu-wrapper {
   height: 100%;
@@ -114,7 +139,7 @@
   margin: 20px auto;
 }
 
-h1 {
+h1.menuItemTitle {
   font-size: 2.1em;
   white-space:  nowrap;
   font-family: "Lobster", cursive;
@@ -123,7 +148,9 @@ h1 {
   padding: 0;
   margin: 1em 0 0;
 }
-
+.menuItemPrice{
+  text-align:center;
+}
 .cake-pic {
   height: 180px;
   width: 180px;
@@ -186,42 +213,54 @@ ul.nutrition li.value {
 
 /* Bakery Card End*/
 
-
-
 /* Bakery Footer Start */
-h1 {
-    text-align: center;
-    color: #a8a8a8;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
-}
+
 form {
     max-width: 600px;
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 40px;
 }
-form input, form textarea {
+form textarea, form input{
+  background-color: #F5F5F5;
+  border: 1px solid black;
+}
+form textarea:focus, form input:focus{
+  border: 3px solid #EEEEEE;
+  background-color: white;
+}
+
+form button, form input, form textarea {
     border: 0;
     outline: 0;
     padding: 1em;
     border-radius: 8px;
     display: block;
-    width: 100%;
+    width: 95%;
     margin-top: 1em;
     font-family: 'Merriweather', sans-serif;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     resize: none;
 }
 form input:focus, form textarea:focus {
-    box-shadow: 0 0px 2px #fff f !important;
+    box-shadow: 0 0px 2px black !important;
 }
-form #input-submit {
+form input:{
+  display:flex;
+  justify-content:center;
+}
+form #bakeryFormSubmit {
     color: white;
-    background: red;
+    background: #DA5C5C;
     cursor: pointer;
+    max-width:400px;
+    margin-left:auto;
+    margin-right:auto;
 }
-form #input-submit:hover {
-    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+
+form #bakeryFormSubmit:hover {
+    box-shadow: 2px 2px 4px 1px rgba(170, 170, 170, 0.6);
 }
+
 form textarea {
     height: 126px;
 }
@@ -233,9 +272,9 @@ form textarea {
 .right {
     width: 50%;
 }
-.left {
+/* .left {
     margin-right: 2%;
-}
+} */
 @media (max-width: 480px) {
     .half {
         width: 100%;
@@ -254,4 +293,7 @@ form textarea {
     clear: both;
 }
 
+.bakeryFooterContainer{
+  background-color: white;
+}
 /* Bakery Footer End */

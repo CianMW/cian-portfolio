@@ -21,9 +21,10 @@ const MenuItem = (props) => {
         <img src={props.items.image} alt={props.items.imgAlt}/>
     </div>
     
-    <h1>{props.items.title}</h1>
+    <h1 className="menuItemTitle">{props.items.title}</h1>
     <span class="dotted-line"></span>
     <p>{props.items.description}</p>
+    <p className="menuItemPrice">{props.items.price}</p>
     <ul class="nutrition">
       <li>fat</li>
       <li>carbs</li>

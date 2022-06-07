@@ -78,18 +78,31 @@ const BakerySample = () => {
                             </Row>
                             {/* First Section END */}
 
+                            {/* About us Section START */}
+                            <Row className="m-0 p-0 bakerySection text-center">
+                            <div className="bakeryAboutSection">
+                            <p className="bakerySectionTitle">Our Story</p>
+                                <p style={{color:"black"}}>It’s 1838. Young Queen Victoria has been on the throne for a year. A new novel by up-and-coming author Charles Dickens has just been published, titled ‘Oliver Twist’. In Hertfordshire, all the talk is about the new London to Birmingham railway, and the very fine bread being baked by Eliza Simmons in the hamlet of Roe Green, just outside Hatfield.</p>
+
+                                <p style={{color:"black"}}>Eliza’s baking know-how was passed on through the generations. More bakeries followed, and her descendants kept the business – and the name for expertly-prepared, oven-fresh products – going strong through the 20th century.</p>
+
+                               <p style={{color:"black"}}> Family members still run the business from Simmons’ Hatfield bakery, making sure our bread’s as fresh today as it was when great great great aunt Eliza was turning it out of the tin.</p>
+                            </div>                                
+                            </Row>
+
+                            {/* About us Section END */}
 
                             {/* Menu Section Section START*/}
                             <Row className="m-0 p-0">
                                 <div className="bakeryMenuContainer">
                                     <div className="leftMenuPanel">
                                         <div className="menuTitle text-center">
-                                            <h2>Our Menu</h2>
+                                            <p className="bakerySectionTitle">Our Menu</p>
                                         </div>
                                     </div>
                                     <Row className="mt-5 rightMenuPanel">
                                         { menuItems.length > 0 && menuItems.map((item, index) => 
-                                        <Col md={4} className="col-12">
+                                        <Col md={6} lg={4} className="col-12">
                                             <MenuItem className="" key={index+Math.random()} items={item} />
                                         </Col>
                                         )
