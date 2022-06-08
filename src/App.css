@@ -833,3 +833,134 @@ p{
   }
 }
 /* newton cradle Loader END */
+
+
+
+/* Landing Page Buttons */
+.custom-btn {
+  text-align:center;
+  margin: 20px;
+  outline: none;
+  width: 200px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-15 {
+  background: #000;
+ color: #fff;
+ z-index: 1;
+}
+.btn-15:after {
+ position: absolute;
+ content: "";
+ width: 0;
+ height: 100%;
+ top: 0;
+ right: 0;
+ z-index: -1;
+  background: #e0e5ec;
+ transition: all 0.6s ease;
+}
+.btn-15:hover {
+ color: #000;
+}
+.btn-15:hover:after {
+ left: auto;
+ width: 100%;
+}
+.btn-15:active {
+ top: 2px;
+}
+
+
+/* 16 */
+.btn-16 {
+  background: #000;
+ color: #fff;
+ z-index: 1;
+}
+.btn-16:after {
+ position: absolute;
+ content: "";
+ width: 0;
+ height: 100%;
+ top: 0;
+ left: 0;
+ direction: rtl;
+ z-index: -1;
+ background: #e0e5ec;
+ transition: all 0.6s ease;
+}
+.btn-16:hover {
+ color: #000;
+}
+.btn-16:hover:after {
+ left: 0;
+ right: 0;
+ width: 100%;
+}
+.btn-16:active {
+ top: 2px;
+}
+/* Landing Page Buttons END*/
+
+.designerName{
+color: #373737;
+font-weight: 900;
+}
+
+.landingTitleContainer{
+  font-size: 4rem;
+  font-weight: 900;
+  color: #373737;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0% 0% 
+ }
+  100% {
+      background-position: 0% 1000% 
+ }
+}
+@-moz-keyframes Gradient {
+  0% {
+      background-position: 0% 0% 
+ }
+  100% {
+      background-position: 0% 1000% 
+ }
+}
+@keyframes Gradient {
+  0% {
+      background-position: 0% 0% 
+ }
+  100% {
+      background-position: 0% 1000% 
+ }
+}
+
+.animTextUnseen  { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-image: url(https://www.isin.net/wp-content/uploads/2019/01/iStock-913071832.jpg);
+     background-size: 300% 300% !important;
+     background-repeat: repeat-y;
+     -webkit-animation: Gradient 40s linear normal infinite both;
+     -moz-animation: Gradient 40s linear normal infinite both;
+     animation: Gradient 40s linear normal infinite both;
+     margin:15px 0;
+     font-size: 6rem;
+  }

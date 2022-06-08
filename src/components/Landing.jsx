@@ -17,24 +17,41 @@ const Landing = () => {
      }, 1500);
    }, [])
        return (
-      <Container className="landing-page-container align-items-center justify-content-center">
+      <Container className="landing-page-container align-items-center justify-content-center" >
         <CradleLoader display={load}/>
+        <Row>
+          <h5 className="text-left mt-2 ml-2 designerName">Cian Markwick</h5>
+          <div className="d-block justify-content-center text-center">
+          <div className="landingTitleContainer">
+            <span>
+              Welcome,
+              </span>
+            <span>
+              I build both the
+              </span>
+            <span>
+              seen & <span className="animTextUnseen">unseen</span>
+              </span>
+            </div>
+          </div>
+        </Row>
         <Row className="justify-content-center align-items-center" style={{height:"100vh"}}>
-          <Col md={2} className=" d-flex text-nowrap justify-content-center align-items-center">
+          <Col md={3} className="d-flex text-nowrap justify-content-center align-items-center">
             <div>
             <Link to="/corporate">
-        <Button>Commercial Work</Button>
+<button class="custom-btn btn-15">Commercial Work</button>
             </Link>
             </div>
           </Col>
-          <Col md={2} className="d-flex text-nowrap justify-content-center align-items-center">
+          <Col md={3} className="d-flex text-nowrap justify-content-center align-items-center">
             <Link to="/portfolio">
-        <Button>Portfolio</Button>
+<button class="custom-btn btn-16">Portfolio</button>
             </Link>
         </Col>
         </Row>
       </Container>
     )
 }
+
 
 export default Landing
