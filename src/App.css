@@ -1,3 +1,10 @@
+:root{
+  --pastelBrown: #E9E2D7;
+}
+
+.siteContainer{
+background-color: var(--pastelBrown);
+}
 .App {
   text-align: center;
 }
@@ -145,7 +152,8 @@ width:100%;
   font-family: "Yellowtail", sans-serif;
   font-size: 60px;
   text-shadow: none;
-  /* 0 0 4px #fff,
+  /* 
+  0 0 4px #fff,
   0 0 8px #fff,
   0 0 16px #f36bff,
   0 0 32px #f36bff, 
@@ -964,3 +972,142 @@ font-weight: 900;
      margin:15px 0;
      font-size: 6rem;
   }
+
+ /* SKEWED PERSPECTIVE TEXT START */
+ .perspectiveTextContainer {
+   height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+ }
+ .perspective-text p{
+   color: white;
+   font-family: Arial;
+   font-size: 58px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+#unseenText{
+  font-size: 58px;
+  margin: 0;
+}
+
+  
+  .perspective-text:not(:hover) .perspective-line.unseen{
+    overflow: visible;
+    position: relative;
+    opacity: 0;
+  }
+  .perspective-line.unseen {
+    height: 50px;
+    top:180px;
+    overflow: visible;
+    position: relative;
+    text-align: right;
+
+  }
+  .perspective-line {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  p.perspect
+   {
+    text-align:center;
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .perspective-line:nth-child(odd) {
+    transform: skew(60deg, -30deg) scaleY(0.667);
+  }
+  
+  .perspective-line:nth-child(even) {
+    transform: skew(0deg, -30deg) scaleY(1.337);
+  }
+  
+  .perspective-text:hover p {
+    transform: translate(0, -50px);
+  }
+  .perspective-text:hover p#unseenText {
+    transform: translate(0, -50px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .perspective-line:nth-child(1) {
+    left: -240px;
+    right: 360px;
+    bottom:-120px;
+    transform: skewY(30deg)
+  }
+  
+  .perspective-line:nth-child(2) {
+    left: 58px;
+    background: #f07e6e;
+  }
+  
+  .perspective-line:nth-child(3) {
+    left: 87px;
+    background: #84cdfa;
+  }
+  
+  .perspective-line:nth-child(4) {
+    left: 116px;
+    background: #5ad1cd;
+  }
+  
+  .perspective-line:nth-child(5) {
+    left: 145px;
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 0% 
+    }
+    100% {
+      background-position: 0% 1000% 
+    }
+  }
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 0% 
+    }
+    100% {
+      background-position: 0% 1000% 
+    }
+  }
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 0% 
+    }
+    100% {
+      background-position: 0% 1000% 
+    }
+  }
+  
+  /* .animTextUnseen  { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(https://www.isin.net/wp-content/uploads/2019/01/iStock-913071832.jpg);
+    background-size: 300% 300% !important;
+    background-repeat: repeat-y;
+    -webkit-animation: Gradient 40s linear normal infinite both;
+    -moz-animation: Gradient 40s linear normal infinite both;
+    animation: Gradient 40s linear normal infinite both;
+  } */
+  
+  
+  .slides{
+    font-family: 'Bungee Shade', cursive;
+    color: black;
+    font-size:1em;
+  }
+  /* SKEWED PERSPECTIVE TEXT END */

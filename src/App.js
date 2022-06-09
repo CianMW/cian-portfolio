@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <Container fluid className="p-0 m-0 " style={{overflowX:"hidden"}}>
+    <Container fluid className="p-0 m-0 siteContainer" style={{overflowX:"hidden"}}>
       <CustomScrollbar style={{height: "100vh", width: "100vw", }}>
       <BrowserRouter>
       <Routes>

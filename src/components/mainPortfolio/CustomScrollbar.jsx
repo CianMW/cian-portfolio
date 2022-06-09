@@ -21,7 +21,7 @@ export default class CustomScrollbar extends Component {
         const viewStyle = {
             // paddingTop:  0 ,
             // backgroundColor: `rgb(${Math.round(255 - (top * 255))}, ${Math.round(top * 255)}, ${Math.round(255)})`,
-            backgroundColor: `#0C0F0A`,
+            backgroundColor: `#E9E2D7`,
             color: `white`,
             overflowX: "hidden"
         };

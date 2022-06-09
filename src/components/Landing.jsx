@@ -4,6 +4,8 @@ import { Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import "./landingPageStyle.css"
 import CradleLoader from "./Loader"
+import NormalIntro from "./mainPortfolio/NormalIntro"
+import PerspectiveIntro from "./PerspectiveIntro"
 
 
 const Landing = () => {
@@ -16,24 +18,15 @@ const Landing = () => {
         }, 1000);
      }, 1500);
    }, [])
+
+   const windowWidth = window.innerWidth
+
        return (
       <Container className="landing-page-container align-items-center justify-content-center" >
         <CradleLoader display={load}/>
-        <Row>
+        <Row style={{overflow:"visible"}}>
           <h5 className="text-left mt-2 ml-2 designerName">Cian Markwick</h5>
-          <div className="d-block justify-content-center text-center">
-          <div className="landingTitleContainer">
-            <span>
-              Welcome,
-              </span>
-            <span>
-              I build both the
-              </span>
-            <span>
-              seen & <span className="animTextUnseen">unseen</span>
-              </span>
-            </div>
-          </div>
+         {windowWidth > 650 ? <PerspectiveIntro/> : <NormalIntro/>}
         </Row>
         <Row className="justify-content-center align-items-center" style={{height:"100vh"}}>
           <Col md={3} className="d-flex text-nowrap justify-content-center align-items-center">
