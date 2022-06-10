@@ -2,10 +2,10 @@ const NormalIntro = () => {
   return (
     <div className="d-block justify-content-center text-center">
       <div className="landingTitleContainer">
-        <span>Welcome,</span>
-        <span>I build both the</span>
+        <span >Welcome,</span>
+        <span >I build both the</span>
         <span>
-          seen & <span className="animTextUnseen">unseen</span>
+        <span className="pastelGradient">seen</span> & <span className="animTextUnseen">unseen</span>
         </span>
       </div>
     </div>

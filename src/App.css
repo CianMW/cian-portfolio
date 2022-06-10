@@ -875,7 +875,7 @@ p{
  top: 0;
  right: 0;
  z-index: -1;
-  background: #e0e5ec;
+  background: white;
  transition: all 0.6s ease;
 }
 .btn-15:hover {
@@ -905,7 +905,7 @@ p{
  left: 0;
  direction: rtl;
  z-index: -1;
- background: #e0e5ec;
+ background: white;
  transition: all 0.6s ease;
 }
 .btn-16:hover {
@@ -1111,3 +1111,23 @@ font-weight: 900;
     font-size:1em;
   }
   /* SKEWED PERSPECTIVE TEXT END */
+
+
+  .pastelGradient {
+    font-size: 6rem;
+    background: rgb(244,207,223);
+    background: linear-gradient(90deg, rgba(244,207,223,1) 11%, rgba(182,216,242,1) 39%, rgba(240,243,211,1) 71%, rgba(243,244,209,1) 82%, rgba(228,148,255,1) 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 1px 1px 5em black ; */
+    -webkit-text-stroke: 1px black;
+  }
+
+  .darkText{
+    color:black;
+  }
+
+  .marginAuto{
+    margin-right: auto;
+    margin-left: auto;
+  }
