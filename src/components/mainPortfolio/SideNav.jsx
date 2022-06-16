@@ -5,7 +5,7 @@ const SideNav = ({wid, closeSideNav}) => {
     <div className={` ${wid} sidenav d-flex align-it ems-center`}  >
         <div  className="sideNavButton " onClick={closeSideNav} >
 
-        <i className="unstyled bi bi-list" ></i>
+        <i className="unstyled bi bi-x"></i>
         </div >
         {/* <button onClick={closeSideNav}>X</button> */}
         <a href="#home-section" className="unstyled text-end" to="/">

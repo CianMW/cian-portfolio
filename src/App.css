@@ -58,7 +58,7 @@ background-color: var(--pastelBrown);
 .header-background{
   background-color: transparent;
   height:0px;
-  position: absolute;
+  position: fixed;
   top:0px;
   left:10px
   /* margin-top: 75px; */
