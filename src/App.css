@@ -1,5 +1,11 @@
 :root{
   --pastelBrown: #E9E2D7;
+  --lightGray: #F5F5F5;
+  --pastelPink: #FF96C5;
+  --pastelBlue: #ABDEE6;
+  --pastelPurple: #ECD5E3;
+  --darkPastelPurple: #c8c7f7;
+  --pastelViolet: #D0A4FF;
 }
 
 .siteContainer{
@@ -53,6 +59,7 @@ background-color: var(--pastelBrown);
   min-height: 100vh;
   padding:0 !important;
   /* margin-top: -75px; */
+  transition:all 0.5s ease-in-out;
 }
 
 .header-background{
@@ -65,18 +72,14 @@ background-color: var(--pastelBrown);
   /* margin-top: -75px; */
 }
 
+/* Main Portfolio Day Night Toggle START */
+.full-cover.day{
+  background-color: var(--lightGray);
+  color: black;
+  transition:all 0.5s ease-in-out;
+}
 
-
-/* test starts here */
-
-
-.main {
-  padding: 0, 5px;
-  /* position: absolute; */
-  /* top: calc(50% - 150px);
-  left: calc(50% - 150px); */
-  width: 100%;
-  height: 100%;
+.mainShadow{
   box-shadow:0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem #bc13fe,
@@ -88,7 +91,73 @@ background-color: var(--pastelBrown);
     inset 0 0 0.8rem #bc13fe,
     inset 0 0 2.8rem #bc13fe; 
     /* overflow: hidden; */
+  transition: all 0.5s ease-in-out;
+
 }
+
+.mainBlockColor{
+  border: 0.5em solid #CBAACB; 
+  border-radius: .5em;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-2-shadow{
+  box-shadow:0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #132bfe,
+  0 0 0.8rem #132bfe,
+  0 0 2.8rem #132bfe,
+  inset 0 0 0.2rem #fff,
+  /* inset 0 0 0.2rem #fff, */
+  inset 0 0 1.3rem #132bfe,
+  inset 0 0 0.8rem #132bfe,
+  inset 0 0 2.8rem #132bfe; 
+  /* overflow: hidden; */
+  transition: all 0.5s ease-in-out;
+}
+.main-2-blockColor{
+  border: 0.5em solid var(--pastelBlue); 
+  border-radius: .5em;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.main-3-shadow{
+  box-shadow:0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #470097,
+  0 0 0.8rem #470097,
+  0 0 2.8rem #470097,
+  inset 0 0 0.2rem #fff,
+  /* inset 0 0 0.2rem #fff, */
+  inset 0 0 1.3rem #470097,
+  inset 0 0 0.8rem #470097,
+  inset 0 0 2.8rem #470097; 
+  /* overflow: hidden; */
+  transition: all 0.5s ease-in-out;
+}
+.main-3-blockColor{
+  border: 0.5em solid var(--darkPastelPurple); 
+  border-radius: .5em;
+  transition: all 0.5s ease-in-out;
+}
+/* Main Portfolio Day Night Toggle END */
+
+/* test starts here */
+
+
+.main {
+  padding: 0, 5px;
+  /* position: absolute; */
+  /* top: calc(50% - 150px);
+  left: calc(50% - 150px); */
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
 
 .outer {
 overflow-y:visible;
@@ -116,10 +185,23 @@ width:100%;
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .sidenav {
+    width: 40%;
+  }
+}
 
 .sideNavButton{
   font-size: 50px;
-  color: white;
+  color: black;
+}
+.unstyled.bi-list.dark{
+ color:white;
+ transition: all 0.5s ease-in-out;
+}
+.unstyled.bi-list.light{
+ color:black;
+ transition: all 0.5s ease-in-out;
 }
 
 .inner-divs{
@@ -137,6 +219,8 @@ width:100%;
 .main-title{
   color: beige;
   font-family: "Yellowtail", sans-serif;
+}
+.main-title.dark{
   text-shadow: 
   0 0 4px pink,
   0 0 8px pink,
@@ -144,7 +228,11 @@ width:100%;
   0 0 32px #ff4470, 
   0 0 64px #ff4470, 
   0 0 150px #ff4470;
-
+  transition: all 0.5s ease-in-out;
+}
+.main-title.light{
+color: var(--pastelPink);
+transition: all 0.5s ease-in-out;
 }
 
 .job-title{
@@ -152,13 +240,6 @@ width:100%;
   font-family: "Yellowtail", sans-serif;
   font-size: 60px;
   text-shadow: none;
-  /* 
-  0 0 4px #fff,
-  0 0 8px #fff,
-  0 0 16px #f36bff,
-  0 0 32px #f36bff, 
-  0 0 64px #f36bff, 
-  0 0 150px #f36bff; */
 
 }
 
@@ -198,8 +279,13 @@ width:100%;
   }
 }
 
-.job-title {
+.job-title.dark {
   animation: flicker 2s infinite linear alternate;    
+  transition: all 0.5s ease-in-out;
+}
+.job-title.light {
+  color: var(--pastelViolet);   
+  transition: all 0.5s ease-in-out;
 }
 /* flicker test end */
 
@@ -398,6 +484,9 @@ img{
   font-size: var(--logo-font);
   font-weight:bold;
 }
+.image-text.light{
+  color:white;
+}
 .image-text-odyssey-left{
   position: absolute;
   transform: translate3d(-80%,0,0);
@@ -411,6 +500,12 @@ img{
   font-size: var(--logo-font);
   font-weight:bold;
   font-family: 'Pirata One', cursive;
+}
+.image-text-odyssey-left.light{
+  color:white;
+}
+.image-text-odyssey-right.light{
+  color:white;
 }
 .image-text-odyssey-right{
   position: absolute;
@@ -513,20 +608,18 @@ p.highlighted{
   text-decoration: none;
   color: pink;
   text-shadow: 
-  0 0 4px pink,
-  0 0 8px pink,
   0 0 16px #ff4470,
   0 0 32px #ff4470, 
-  0 0 64px #ff4470, 
-  0 0 150px #ff4470;
-  transition: color 1.5s, text-shadow 1s;
+  0 0 64px #ff4470;
+  transition: color 1.5s, text-shadow 0.5s;
 
 }
 
 .unstyled{
   text-decoration: none;
   color:white;
-  transition: color 1.5s, text-shadow 1s;
+  transition: color 1.5s, text-shadow 0.5s;
+  mix-blend-mode: difference;
 
 }
 
@@ -535,20 +628,9 @@ p.highlighted{
 
 .main-2 {
   padding: 0, 5px;
-
   width: 100%;
   height: 100%;
-  box-shadow:0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #132bfe,
-    0 0 0.8rem #132bfe,
-    0 0 2.8rem #132bfe,
-    inset 0 0 0.2rem #fff,
-    /* inset 0 0 0.2rem #fff, */
-    inset 0 0 1.3rem #132bfe,
-    inset 0 0 0.8rem #132bfe,
-    inset 0 0 2.8rem #132bfe; 
-    /* overflow: hidden; */
+  transition: all 0.5s ease-in-out;
 }
 /* About me section end */
 
@@ -613,20 +695,8 @@ p{
 /* Contact section */
 .main-3 {
   padding: 0, 5px;
-
   width: 100%;
   height: 100%;
-  box-shadow:0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #470097,
-    0 0 0.8rem #470097,
-    0 0 2.8rem #470097,
-    inset 0 0 0.2rem #fff,
-    /* inset 0 0 0.2rem #fff, */
-    inset 0 0 1.3rem #470097,
-    inset 0 0 0.8rem #470097,
-    inset 0 0 2.8rem #470097; 
-    /* overflow: hidden; */
 }
 /* Contact section end */
 
@@ -644,12 +714,12 @@ p{
 
 @media only screen and (max-width: 700px) {
   .open {
-    width:25%;
+    width:35%;
   }
 }
 @media only screen and (max-width: 350px) {
   .open {
-    width:30%;
+    width:40%;
   }
 }
 .closed{
@@ -659,7 +729,10 @@ p{
 .n-button{
   width:8rem;
   height:3rem;
+  transition: box-shadow 1s;
+}
 
+.n-buttonShadow{
   background-color: transparent;
   box-shadow:0 0 .2rem #fff,
   0 0 .2rem #fff,
@@ -672,11 +745,12 @@ p{
   inset 0 0 2.8rem #470097; 
   overflow: visible;
   border: none;
-  transition: box-shadow 1s;
+  transition:all 0.5s ease-in-out;
 }
-
-
-.n-button:hover {
+.n-buttonBlockColor{
+  border: 2px solid black;
+}
+.n-buttonShadow:hover {
   box-shadow:0 0 .2rem #fff,
   0 0 .2rem #fff,
   0 0 2rem #470097,
@@ -691,13 +765,18 @@ p{
   cursor:pointer;
 
 }
-.n-button:hover .n-button-text{
+.n-buttonShadow:hover .n-button-text{
   color:#0C0F0A;
   text-shadow:none;
   transition: text-shadow 1s ease-in-out, color 1s;
 }
-
 .n-button-text{
+  font-size: calc(100%/.5);
+  font-weight:normal;
+
+}
+
+.n-button-dark-text{
   color:white;
   height:100%;
   font-size: calc(100%/.5);

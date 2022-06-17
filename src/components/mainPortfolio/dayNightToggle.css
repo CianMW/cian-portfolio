@@ -1,8 +1,14 @@
 
-.toggleContainer{
-position: fixed;
-right:0;
-padding:15px 10px 0 0;
+.toggleContainer.top{
+    position: fixed;
+    right:0;
+    padding:15px 10px 0 0;
+}
+
+.toggleContainer.bottom{
+    position: relative;
+    right:0;
+    padding:15px 10px 0 0;
 }
 .toggle-control {
     display: block;
@@ -20,15 +26,15 @@ padding:15px 10px 0 0;
     height: 0;
     width: 0;
 }
-.toggle-control input:checked ~ .control {
+.toggle-control input.night ~ .control {
     background-color: #4314d2;
 }
-.toggle-control input:checked ~ .control::before {
+.toggle-control input.night ~ .control::before {
     background: #4314d2;
     left: 39px;
     transform: scale(1);
 }
-.toggle-control input:checked ~ .control::after {
+.toggle-control input.night ~ .control::after {
     background: white;
     left: 55px;
 }
