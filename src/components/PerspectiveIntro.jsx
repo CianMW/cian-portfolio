@@ -16,11 +16,11 @@ const PerspectiveIntro = () => {
           <p className="perspect">I Build</p>
           <p className="perspect">Of Course</p>
         </div>
-        <div class="perspective-line">
+        <div className="perspective-line">
           <p className="perspect">The</p>
           <p className="perspect">The</p>
         </div>
-        <div class="perspective-line">
+        <div className="perspective-line">
           <p className="perspect slides">seen</p>
           <p className="perspect"></p>
         </div>
