@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 
-const Projects = () => {
+const Projects = ({isChecked}) => {
   return (
     <>
       <Row className="my-5">
@@ -32,7 +32,7 @@ const Projects = () => {
                         <div className="SOTD"></div>
                       </picture>
                       <img className="BIFTF weather" src="/projects/mobile-device-weather-at.png" />
-                      <span className="image-text text-nowrap">Weather @</span>
+                      <span className={`image-text text-nowrap ${!isChecked && "light"}`}>Weather @</span>
 
                       <a
                         className="site-link"
@@ -147,9 +147,9 @@ const Projects = () => {
                         <div className="SOTD"></div>
                       </picture>
                       <img className="BIFTF" src="https://i.ibb.co/WktP2gK/space-aces-tablet.png" />
-                      <span className="image-text-odyssey-left text-nowrap">Odyssey</span>
+                      <span className={`image-text-odyssey-left ${!isChecked && "light"} text-nowrap`}>Odyssey</span>
                       <img className="sword" src="/projects/odyssey-sword.png" height="50px" />
-                      <span className="image-text-odyssey-right text-nowrap">VTT</span>
+                      <span className={`image-text-odyssey-right ${!isChecked && "light"} text-nowrap`}>VTT</span>
 
                       <a
                         className="site-link"
