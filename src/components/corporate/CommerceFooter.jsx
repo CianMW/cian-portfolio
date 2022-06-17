@@ -48,7 +48,8 @@ const CommerceFooter = () => {
             </div>
           </div>
         </Row>
-        <div className="row" data-aos="fade-up" data-aos-delay={100}>
+        {/* <div className="row" data-aos="fade-up" data-aos-delay={100}> */}
+        <div className="row">
           <div className="col-lg-6 ">
             <iframe
               className="mb-4 mb-lg-0"
