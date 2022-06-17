@@ -1,11 +1,12 @@
 import { a } from "react-router-dom";
+import DayNightToggle from "./DayNightToggle";
 
-const SideNav = ({wid, closeSideNav}) => {
+const SideNav = ({windowWidth, isChecked ,setIsChecked, wid, closeSideNav}) => {
     return (
     <div className={` ${wid} sidenav d-flex align-it ems-center`}  >
         <div  className="sideNavButton " onClick={closeSideNav} >
 
-        <i className="unstyled bi bi-list" ></i>
+        <i className="unstyled bi bi-x"></i>
         </div >
         {/* <button onClick={closeSideNav}>X</button> */}
         <a href="#home-section" className="unstyled text-end" to="/">
@@ -20,6 +21,9 @@ const SideNav = ({wid, closeSideNav}) => {
         <a href="#contact_section" className="unstyled" to="/">
         <h2 className="unstyled">Contact</h2>
         </a>
+        {windowWidth < 768 &&
+                <DayNightToggle position={"bottom"} isChecked={isChecked} setIsChecked={setIsChecked}/>
+        }
     </div>
      )
     };

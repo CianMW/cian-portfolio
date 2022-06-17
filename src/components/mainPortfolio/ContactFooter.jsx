@@ -1,6 +1,6 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
-const ContactFooter = () => {
+const ContactFooter = ({isChecked}) => {
   return (
     <Row id="contact_section" className="p-0 my-3 footer sticky-bottom">
       <Row className="mb-3">
@@ -14,7 +14,7 @@ const ContactFooter = () => {
           </a>
         </Col>
       </Row>
-      <Row className="p-md-5 p-2 main-3">
+      <Row  className={`main-3 p-md-5 p-2 ${isChecked ? "main-3-shadow":"main-3-blockColor"}`}>
 
       <Col className="col-md-6 col-12 justify-content-center  text-nowrap">
           <h1 className="text-center text-middle">
@@ -45,8 +45,8 @@ const ContactFooter = () => {
       <Col className="mt-2 mb-0 col-12 align-items-center justify-content-center d-flex">
       <a className="p-height" target="_blank" href="/Cian-Markwick-Web-Developer-CV.pdf">
 
-      <button className="n-button">
-        <span className="n-button-text">
+      <button className={`n-button ${isChecked ? "n-buttonShadow" : "n-buttonBlockColor"}`}>
+        <span className={`n-button-text ${isChecked && "n-button-dark-text"}`}>
         Resume
         </span>
       </button>

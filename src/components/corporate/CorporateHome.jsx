@@ -7,6 +7,7 @@ import CommerceNav from "./CommerceNav";
 import CommerceFooter from "./CommerceFooter";
 import { useEffect, useState } from "react";
 import CradleLoader from "../Loader";
+import CommerceWorkContainer from "./CommerceWorkContainer";
 
 const CorporateHome = () => {
   const [load, setLoad] = useState("true");
@@ -23,6 +24,7 @@ const CorporateHome = () => {
       <CradleLoader display={load}/>
       <CommerceNav/>
       <Row className="px-5">
+      <CommerceWorkContainer/>
       <CommerceFooter/>
       </Row>
     </Container>

@@ -1,46 +1,299 @@
-.bakeryContainer{
-    background-color: #fff;
-    min-width: 100vw;
-    min-height: 100vh;
-    height: 100%;
-    max-height: 100vh;
+.bakeryContainer {
+  background-color: #fff;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  max-height: 100vh;
 }
 
-.bakerySideMenu{
-    background-color:#325587;
-    min-height: 100vh;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.bakerySideMenu {
+  background-color: #325587;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.bakeryLogoImage{
-    width: 100%;
-    /* height: 100%; */
+.bakeryLogoImage {
+  width: 100%;
+  /* height: 100%; */
 }
 
-.bakeryLink{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 0.5rem;
+.bakeryLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  border-bottom: 1px solid #c49684;
+  transition: font-weight 0.3s, border-bottom 0.3s;
+}
+
+.bakeryLink:hover {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.bakeryMenuContainer {
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+
+.bakeryBackgroundImage {
+  width: 100%;
+  height: 450px;
+  background-image: url("https://www.nazstudentblog.com/wp-content/uploads/2015/03/village-bakery-home-retail.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* General Styling Start */
+.bakerySectionTitle{
+  font-size: 2rem;
+  color: #c49684;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0 #c49684;
+
+}
+.bakerySection{
+  backround-color: white;
+}
+.bakeryAboutSection{
+  background-color:white;
+  text:center;
+}
+.bakeryAboutSection p{
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+  width: 80%;
+}
+/* General Styling end */
+/* Bakery Card Start*/
+.menu-wrapper {
+  height: 100%;
+}
+
+.fa-share-alt {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  position: relative;
+  top: -75px;
+  left: 160px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+#share {
+  background-color: #5aa57f;
+  height: 180px;
+  width: 40px;
+  padding: 0 10px;
+  border-radius: 0 0 20px 0px;
+  position: absolute;
+  display: none;
+  margin: 0px 0 0 340px;
+  top: 100px;
+}
+#share i {
+  margin: 13px 5px 14px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.menu-card {
+  width: 300px;
+  height: auto;
+  max-height: 450px;
+  background: #fff;
+  /* padding: 40px; */
+  margin: 100px auto 40px;
+  z-index: 100;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  font-family: Helvetica, san-serif;
+  line-height: 1.4em;
+  color: #777;
+  border-top: 50px solid #98cdb2;
+}
+
+.menu-card p {
+  margin: 0 0 34px;
+}
+
+.dotted-line {
+  border-bottom: 2px dotted #999;
+  display: block;
+  height: 2px;
+  width: 30%;
+  margin: 20px auto;
+}
+
+h1.menuItemTitle {
+  font-size: 2.1em;
+  white-space:  nowrap;
+  font-family: "Lobster", cursive;
+  font-weight: normal;
+  color: #666;
+  padding: 0;
+  margin: 1em 0 0;
+}
+.menuItemPrice{
+  text-align:center;
+}
+.cake-pic {
+  height: 180px;
+  width: 180px;
+  position: relative;
+  background-size: 100% 100%;
+  border-radius: 180px;
+  margin: -200px auto 40px;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 4px 5px 13px -4px rgba(102, 102, 102, 0.28);
+  -moz-box-shadow: 4px 5px 13px -4px rgba(102, 102, 102, 0.28);
+  box-shadow: 4px 5px 13px -4px rgba(102, 102, 102, 0.28);
+}
+.cake-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 180px;
+}
+
+ul.nutrition {
+  color: #fff;
+  height: auto;
+  padding: 0px;
+  height: 15px;
+}
+
+ul.nutrition li {
+  float: left;
+  background-color: #9f3c5a;
+  display: inline-block;
+  width: 30.5%;
+  padding: 3px 0;
+  border: 0px solid #fff;
+  border-radius: 0 20px 0 0;
+  margin: 0 4px;
+  font-size: 0.9em;
+}
+
+ul.nutrition li.value {
+  background-color: #efdce2;
+  border-radius: 0 0 0 20px;
+  color: #666;
+}
+
+.warning p {
+  font-size: 0.8em;
+  margin: 30px 0 10px;
+  display: block;
+  width: 100%;
+  padding: 2px;
+  clear: both;
+  font-style: italic;
+  color: #999;
+}
+
+.warning p span {
+  text-transform: uppercase;
+}
+
+/* Bakery Card End*/
+
+/* Bakery Footer Start */
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto 40px;
+}
+form textarea, form input{
+  background-color: #F5F5F5;
+  border: 1px solid black;
+}
+form textarea:focus, form input:focus{
+  border: 3px solid #EEEEEE;
+  background-color: white;
+}
+
+form button, form input, form textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
     display: block;
-    transition: 0.3s;
-    cursor: pointer;
-    border-bottom: 1px solid #C49684;
-    transition: font-weight 0.3s, border-bottom 0.3s;
+    width: 95%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
 }
-
-.bakeryLink:hover{
+form input:focus, form textarea:focus {
+    box-shadow: 0 0px 2px black !important;
+}
+form input:{
+  display:flex;
+  justify-content:center;
+}
+form #bakeryFormSubmit {
     color: white;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-
+    background: #DA5C5C;
+    cursor: pointer;
+    max-width:400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.bakeryMenuContainer{
-    height: 100vh;
-    background-color: white;
-    color: black;
+form #bakeryFormSubmit:hover {
+    box-shadow: 2px 2px 4px 1px rgba(170, 170, 170, 0.6);
 }
+
+form textarea {
+    height: 126px;
+}
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+.right {
+    width: 50%;
+}
+/* .left {
+    margin-right: 2%;
+} */
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+   }
+}
+/* Clearfix */
+.cf:before, .cf:after {
+    content: " ";
+   /* 1 */
+    display: table;
+   /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+.bakeryFooterContainer{
+  background-color: white;
+}
+/* Bakery Footer End */

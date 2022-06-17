@@ -21,10 +21,10 @@ export default class CustomScrollbar extends Component {
         const viewStyle = {
             // paddingTop:  0 ,
             // backgroundColor: `rgb(${Math.round(255 - (top * 255))}, ${Math.round(top * 255)}, ${Math.round(255)})`,
-            backgroundColor: `#0C0F0A`,
+            backgroundColor: `#E9E2D7`,
             color: `white`,
-            overflowX: "hidden"
-        };
+            overflowX: "hidden",
+                };
         return (
             <div
                 className="box"
@@ -36,7 +36,7 @@ export default class CustomScrollbar extends Component {
     renderThumb({ style, ...props }) {
         const { top } = this.state;
         const thumbStyle = {
-            backgroundColor: `white`
+            backgroundColor: `gray`,
         };
         return (
             <div
