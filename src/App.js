@@ -7,6 +7,7 @@ import './App.css';
 import Landing from './components/Landing';
 import CorporateHome from './components/corporate/CorporateHome';
 import BakerySample from './components/bakerySample/BakerySample';
+import MainView from './components/companySample/MainView';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/corporate" element={<CorporateHome/>}/>
         <Route path="/portfolio" element={<Home/>}/>
         <Route path="/sampleBakery" element={<BakerySample/>}/>
+        <Route path="/Company" element={<MainView/>}/>
       </Routes>
       </BrowserRouter>
     </CustomScrollbar>

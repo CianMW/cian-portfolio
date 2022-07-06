@@ -28,7 +28,7 @@ const Landing = () => {
           <h5 className="text-left mt-2 ml-2 designerName">Cian Markwick - Full Stack Developer</h5>
          {windowWidth > 650 ? <PerspectiveIntro/> : <NormalIntro/>}
         </Row>
-        <Row className="mt-5 pt-5 justify-content-center align-items-center" >
+        <Row className="mt-5 pt-5 justify-content-center" >
           <Col md={6} className="d-block text-center darkText justify-content-center align-items-center">
             <div>
               <h2 className="fw-bold">Looking to hire a developer?</h2>

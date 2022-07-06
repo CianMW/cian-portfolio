@@ -1053,3 +1053,8 @@ p.perspect {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+.noLinkStyle{
+  text-decoration: none;
+}
