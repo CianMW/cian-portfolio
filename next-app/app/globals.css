@@ -73,6 +73,28 @@
   }
 }
 
+
+@media only screen and (max-width: 350px) {
+  :root {
+    --jpg-height: 250px;
+    --jpg-width: 200px;
+    --logo-font: 60px;
+  }
+}
+:root {
+  --jpg-height: 350px;
+  --jpg-width: 300px;
+  --logo-font: 60px;
+  --pastelBrown: #e9e2d7;
+  --lightGray: #f5f5f5;
+  --pastelPink: #ff96c5;
+  --pastelBlue: #abdee6;
+  --pastelPurple: #ecd5e3;
+  --darkPastelPurple: #c8c7f7;
+  --pastelViolet: #d0a4ff;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -98,6 +120,19 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.siteContainer {
+  background-color: var(--pastelBrown);
+}
+.fullCover {
+  /* background-color:white; */
+  background-color: #0c0f0a;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0 !important;
+  /* margin-top: -75px; */
+  transition: all 0.5s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
