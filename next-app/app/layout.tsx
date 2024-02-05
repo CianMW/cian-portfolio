@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={` ${inter.className}`}lang="en">
-      <body className={`siteContainer fullCover `}>
+      <body className={`siteContainer fullCover`}>
         {children}
         </body>
     </html>
